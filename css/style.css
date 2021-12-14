@@ -1,0 +1,423 @@
+@font-face {font-family: Arimo; 
+	      src: url('Arimo.ttf');} /*imports Arimo font (included in zip)*/
+*{
+  outline:none;
+}
+html{
+  overflow-x: hidden;
+}
+body{
+  background-color: rgb(49,85,83);
+  color: white;
+  font-family: Arimo, Roboto, Montserrat, sans-serif;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; 
+  padding-top: 3rem; /*makes space for header*/
+}
+
+nav { 
+  position: fixed; /*nav bar still visible as you scroll*/
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  text-align: right;
+  font-size: 20px;
+  height: 2.75rem;
+  background-color: black;
+}
+
+/*styles for links under nav*/
+nav > ul  ul {
+	list-style-type: none;
+	padding: 0;
+	background: black;
+  color: white;
+}
+
+/* class third is the "Overview" section in nav*/
+.third{
+  cursor: pointer;
+}
+
+.third ul {
+	margin-left: -50px;
+}
+
+/* to hide the drop down menu */
+.third ul {	
+	display:none;
+	position:absolute;			
+} 
+    
+nav > ul > li {
+	display:inline-block; 
+	width: 100px; 
+	text-align: center; 
+	padding: 10px 0; 
+}
+
+nav > ul ul li a:link, nav > ul ul li a:visited{
+  color: black;
+}
+
+/* Style for links under Overview*/
+nav > ul ul {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+	padding: 10px; 
+  margin-top: 0.5%;
+  margin-bottom: 10px;
+}
+				
+nav > ul ul li, nav > ul ul li a {
+	width: 130px; 
+	padding: 5px; 
+  font-size: 16px;
+  text-align: left;
+}
+
+/* This step should show the links below Overview */
+.third:hover ul{
+	display:block;
+}
+
+a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header{ 
+  background-image: url(../images/homepage-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover; /*based on viewport and will adjust the image accordingly*/
+  margin: 0px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1{
+  position: absolute;
+  font-size: 15vh; /*vh implies that size/margins are relative to viewport size*/
+  top: 10vh;
+} 
+
+header p{
+  position: absolute;
+  font-size: 5vh; /*vh implies that size/margins are relative to viewport size*/
+  top: 35vh; 
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7.5rem;
+  padding: 1.5%;
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
+}
+
+footer a:hover{
+  opacity: 0.6;
+}
+
+footer img{
+  margin-right: 1%;
+}
+
+h1{
+  text-align: center;
+}
+
+section p{
+  font-size: 18px;
+}
+
+section h1{
+  font-size: 8vh;
+}
+
+/*style for article cards section in home page*/
+.selectionContent{
+  background-color: #F4F2F7;
+  color: rgb(49,85,83);
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/*style for article cards in home page*/
+.container{
+  background-color: white;
+  float: left;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 290px;
+  height: 420px;
+  margin: 5%;
+  margin-right: 2%;
+  padding: 15px;
+}
+
+.container h1{
+  font-size: 36px;
+  text-align: left;
+}
+
+.container p{
+  font-size: 24px;
+}
+
+.container:hover {
+  transform: scale(1.1);
+} 
+
+.container:active{
+  opacity: 0.7;
+}
+
+/*style for background images of article cards in home page*/
+#importance{
+  background-image: url(../images/importance.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#challenges{
+  background-image: url(../images/challenge.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#improve{
+  background-image: url(../images/improve.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*style for general link button */
+.button{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  padding: 10px 20px;
+  letter-spacing: 0.05em;
+  margin: 5% 0;
+}
+
+a.button{
+  color: black;
+}
+
+a.button:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+/*style for orgs section in home page*/
+.selectionOrgs{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 5%;
+}
+
+.selectionOrgs p{
+  font-size: 24px;
+}
+
+/* style for images of org logos*/
+.selectionOrgs img{
+  border-radius: 50%;
+  margin: 6% 0;
+  margin-bottom: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+/* style for each org*/
+.orgs{
+  float: left;
+  width: 220px;
+  height: 300px;
+  margin: 3%;
+  margin-right: 2%;
+  padding: 15px;
+}
+
+.orgs:hover{
+  transform: scale(1.1)
+}
+
+/* to hide additional info about orgs */
+.hide {
+  display: none;
+  margin: 7%;
+  text-align: justify;
+  padding: 10px;
+}
+
+/* to show additional info about orgs when you hover*/
+.orgs:hover > .hide {
+  display: block;
+  background-color: #2A4C4D;
+  border-radius: 10px;
+}
+
+/*style for articles under Overview*/
+.article{
+  background-color: #F4F2F7;
+}
+
+/*style for background images of article headers*/
+#importanceArticle{ 
+  background-image: url(../images/importance.png);
+}
+
+#challengesArticle{ 
+  background-image: url(../images/challenge.png);
+}
+
+#improveArticle{ 
+  background-image: url(../images/improve.png);
+}
+
+/*style for article headers*/
+.article header h1{
+  font-size: 10vh;
+}
+
+.article header p{
+  font-size: 4vh;
+  top: 40vh; 
+}
+
+.article article a{
+  color: black;
+}
+
+/*style for articles*/
+article{
+  color: black;
+  padding: 3% 25%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+article h1{
+  font-size: 36px;
+}
+
+/*style for about page (overrides black font color for articles)*/
+.about{
+  color: white; 
+}
+
+/*style for media captions within articles*/
+.imageCaption{
+  font-size: 12px;
+  font-style: italic;
+}
+
+/*style for previous, next buttons in each article*/
+.prevNext{
+  margin: 2% -30%;
+}
+
+a.next:hover, a.previous:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a.next {
+  color: rgb(49,85,83);
+  float: right;
+  text-decoration: none;
+}
+
+a.previous {
+  color: rgb(49,85,83);
+  float: left;
+  text-decoration: none;
+}
+
+/*style to make iframes reponsive*/
+.containerVid {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/*style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*style for references in each article*/
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+.pageReferences{
+  font-size: 18px;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+.pageReferences a{
+  color: black;
+}
+
+/*style for references.html*/
+.references{
+  line-height: 2.0; /*double spacing */
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* different color combination when user selects/highlight anything on the browser */
+::selection {
+	color:white; 
+	background: rgba(92, 172, 168, 0.5);
+} 
