@@ -346,6 +346,13 @@ article h1{
   font-style: italic;
 }
 
+/*style for responsive videos*/
+iframe{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
 /*style for previous, next buttons in each article*/
 .prevNext{
   margin: 2% -30%;
