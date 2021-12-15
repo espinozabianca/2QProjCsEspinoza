@@ -309,7 +309,7 @@ a.button:hover{
   background-image: url(../images/improve.png);
 }
 
-/*style for article headers*/
+/*style for class .article headers*/
 .article header h1{
   font-size: 10vh;
 }
@@ -323,7 +323,13 @@ a.button:hover{
   color: black;
 }
 
-/*style for articles*/
+/*style for images within class .article (importance, challenges, improve)*/
+.article img{
+  height: auto;
+  max-width: 100%;
+}
+
+/*style for articles [includes about page]*/
 article{
   color: black;
   padding: 3% 25%;
