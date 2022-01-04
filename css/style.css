@@ -98,6 +98,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/*styles for header */
 header{ 
   background-image: url(../images/homepage-bg-2.png);
   background-repeat: no-repeat;
@@ -122,6 +123,7 @@ header p{
   top: 35vh; 
 }
 
+/*styles for footer */
 footer{
   left: 0;
   bottom: 0;
@@ -134,12 +136,52 @@ footer{
   background-color: black;
 }
 
-footer a:hover{
+footer > a:hover{
   opacity: 0.6;
 }
 
-footer img{
-  margin-right: 1%;
+/*styles for image sprites */
+.socMed{
+  text-align: center; 
+  display: inline-block;
+  width: 8%;
+}
+
+.socMed a div{
+  padding: 1.75%;
+}
+
+.facebook{
+  background: url('../images/icon.png') no-repeat -116px -77px;
+	width: 34px;
+	height: 34px;
+  float: left;
+}
+
+.facebook:hover{
+  background: url('../images/icon.png') no-repeat -116px -171px;
+} 
+
+.twitter {
+  background: url('../images/icon.png') no-repeat -231px -77px;
+	width: 34px;
+	height: 34px;
+  float: left;
+}
+
+.twitter:hover{
+  background: url('../images/icon.png') no-repeat -231px -171px;
+} 
+
+.instagram {
+  background: url('../images/icon.png') no-repeat -345px -76px;
+	width: 34px;
+	height: 34px;
+  float: left;
+}
+
+.instagram:hover{
+  background: url('../images/icon.png') no-repeat -345px -171px;
 }
 
 h1{
